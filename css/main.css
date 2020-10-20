@@ -384,7 +384,7 @@ animation: fadeIn ease 8s;
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   .top-section{
     height: 100vh;
   }
