@@ -1,0 +1,404 @@
+
+html
+body {
+  margin: 0;
+}
+
+
+ul {
+  padding-right: 5%;
+}
+
+li {
+  padding-right: 4px;
+  font-family: 'Rubik', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+/* BEGINNING OF CLASS SELECTORS */
+
+
+.myNav {
+  margin-bottom: 8%;
+}
+
+/* CLASS THAT TURNS SCROLL COLOR OFF AND ON NAVBAR */
+.blue {
+  background-color: #d2d3c9;
+}
+.brand {
+  width: 15%;
+  padding-left: 5%;
+}
+
+.top-section {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.title {
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+  font-size: 5.625rem;
+  letter-spacing: 2px;
+}
+
+.sub-title {
+  font-family: 'Rubik', sans-serif;
+  color: #66BFBF;
+  font-size: 2.5rem;
+}
+
+.me {
+  margin-top: 6%;
+}
+
+@media screen and (max-width: 600px) {
+  .me {
+    padding-top: 10%;
+    margin-bottom: 0;
+    margin-top: 32%;
+  }
+}
+
+.intro-title {
+  font-size: 2.5rem;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    color: #66BFBF;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #66BFBF, rgba(0, 0, 0, 0));
+}
+
+.intro {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-color: #66BFBF;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.intro-p {
+  letter-spacing: 1px;
+  line-height: 40px;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+}
+
+.project-title {
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+  font-size: 5.625rem;
+  letter-spacing: 2px;
+}
+.gallery-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* Need to keep grid gap when using flexbox so space between images stays */
+  grid-gap: 15px;
+  /* Needed to include flex wrap so viewport responsiveness would work */
+  flex-wrap: wrap;
+  margin-top: 4%;
+  margin-bottom: 3%;
+
+}
+
+/* .gallery-item-1 {
+  grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery-item-2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery-item-3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 3;
+} */
+
+.gallery-1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2%;
+  box-shadow: 10px 10px 5px grey;
+  transition: transform .2s; /* Animation */
+
+}
+
+.gallery-2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2%;
+  box-shadow: 10px 10px 5px grey;
+  transition: transform .2s; /* Animation */
+}
+
+.gallery-3 {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2%;
+  /* ADDS SHADOW TO THE BACK OF IMAGE GIVING 3D APPEARANCE */
+  box-shadow: 10px 10px 5px grey;
+  transition: transform .2s; /* Animation */
+}
+
+.gallery-1:hover {
+  box-shadow: 18px 18px 13px rgb(96, 96, 96);
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.gallery-2:hover {
+  box-shadow: 18px 18px 13px rgb(96, 96, 96);
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.gallery-3:hover {
+  box-shadow: 18px 18px 13px rgb(96, 96, 96);
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+/* Controls project image mobile resonsiveness */
+
+@media screen and (max-width: 600px) {
+  .gallery-1 {
+    width: 100%;
+  }
+
+  .gallery-2 {
+    width: 100%;
+  }
+
+  .gallery-3 {
+    width: 100%;
+  }
+}
+
+.project-title {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.code-img {
+  width: 20%;
+  margin-left: 40%;
+
+}
+
+.photography {
+  background-image: url("../images/bjj.jpg");
+  /* Set a specific height */
+ height: 400px;
+
+ /* Create the parallax scrolling effect */
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ padding-top: 20%;
+ padding-bottom: 20%;
+}
+@media screen and (max-width: 600px) {
+  .photography {
+    height: 500px;
+  }
+}
+
+.photo-text {
+  color: white;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 8%;
+  /* word-wrap: break-word */
+  font-family: 'Montserrat', sans-serif;
+  width: 50%;
+  text-shadow: 2px 2px black;
+
+}
+.contact-form {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+
+.contact-title {
+  font-family: 'Montserrat', sans-serif;
+  color: #66BFBF;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.contact-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.contact-p {
+  width: 38%;
+  margin: 60px auto;
+  line-height: 2;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-img {
+  width: 20%;
+  float: left;
+  margin-bottom: 20%;
+}
+
+  .text-area {
+    margin-left: 50%;
+  }
+
+
+
+.bottom-container {
+  background-color: #d2d3c9;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  text-align: center;
+}
+
+.footer-link {
+  text-decoration: none;
+  padding-right: 42px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.bottom-p {
+  padding-top: 23px;
+  color: #EAF6F6;
+  font-size: 0.75rem;
+}
+
+/* Used to control color control a gradient color change in title. I removed it, but might use later */
+/* .gradient-text {
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+} */
+    /* font-family: 'Piazzolla', serif;
+  font-family: 'Sansita Swashed', cursive; */
+/* ADDING THE SLIDE IN EFFECT FOR THE TOP TEXT */
+
+/* @keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.top-section {
+  /* This section calls the slideInFromLeft animation we defined above */
+  /* animation: 3s ease-out 0s 1 slideInFromLeft; */
+
+  /* background: #333; */
+  /* padding: 30px; */
+/* }  */
+
+/* CONTROLS FADE IN ON LOAD */
+.fade-in {
+animation: fadeIn ease 8s;
+-webkit-animation: fadeIn ease 8s;
+-moz-animation: fadeIn ease 8s;
+-o-animation: fadeIn ease 8s;
+-ms-animation: fadeIn ease 8s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+/* CONTROLS FADE IN ON SCROLL */
+.text-trans {
+  opacity: 0;
+  /* -webkit-transform: translateY(4em) rotateZ(-5deg);
+          transform: translateY(4em) rotateZ(-5deg); */
+  -webkit-transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out;
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  /* width: 90%; */
+
+  will-change: transform, opacity;
+
+}
+
+.text-trans.is-visible {
+  opacity: 1;
+
+}
+
+@media screen and (max-width: 600px) {
+  .top-section{
+    height: 100vh;
+  }
+  .intro{
+    height: 100vh;
+  }
+  /* .portfolio{
+    height: 100vh;
+  } */
+  .photography{
+    height: 100vh;
+  }
+  .contact-form{
+    height: 100vh;
+  }
+
+}

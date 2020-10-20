@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap?family=Rubik:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/138975eeda.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="myNav fixed-top fade-in">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand" href="#home"><img class="brand" src="images/mountain.png" alt="mountain-navbrand"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="top-section fade-in">
+    <h1 class="title" id="home">Front-End Developer</h1>
+    <h4 class="sub-title">Happily turning <span id="imagination"><u>imagination</u></span> in to reality!</h4>
+    <img class="me" id="myCartoon" src="images/myAvatar2.png" alt="">
+  </div>
+  <div class="intro fade-in" id="about">
+    <h2 class="intro-title show-on-scroll text-trans">Hi, I'm Marcel. It's a pleasure to meet you.</h2>
+    <hr>
+    <h4 class="intro-p show-on-scroll text-trans">I am looking to work for a team that I can grow with, create, and that will challenge me on a daily basis. </br>
+      My main focus is working with HTML, CSS, JAVASCRIPT & Testing.
+    </h4>
+    <h4 class="intro-p show-on-scroll text-trans">
+      I believe in constant growth & because of that I am also currently learning Backend Languages and Databases like  NODE.JS, MONGO DB, SQL & frameworks such as React.js.
+    </h4>
+  </div>
+  <div class="portfolio" id="portfolio">
+    <h1 class="project-title show-on-scroll text-trans">Recent Projects</h1>
+    <div class="gallery-container show-on-scroll text-trans">
+      <div class="gallery-item-1">
+        <a href="https://mvelkelly.github.io/restRand/" target="_blank"><img class="gallery-1 " src="images/restPicker.png" alt=""></a>
+
+      </div>
+      <div class="gallery-item-2">
+        <a href="https://mvelkelly.github.io/hatsorted/" target="_blank"><img class="gallery-2" src="images/harry.jpg" alt=""></a>
+      </div>
+      <div class="gallery-item-3">
+        <a href="https://mvelkelly.github.io/kristachef.github.io/" target="_blank"><img class=" gallery-3" src="images/chef.jpg" alt=""></a>
+      </div>
+    </div>
+    <img class="code-img show-on-scroll text-trans" src="https://media.giphy.com/media/yU0vrGBTI6TKg/giphy.gif" alt="">
+  </div>
+  <div class="photography show-on-scroll text-trans">
+    <a href="https://www.instagram.com/chelo_mellow/" target="_blank"><h1 class="photo-text">I am also a hobby photographer and enjoy communicating through images 📷</h1></a>
+  </div>
+  <div class="contact-form show-on-scroll text-trans" id="contact" >
+    <form class="" action="mailto:velascomarcel@hotmail.com" method="post">
+      <h1 class="contact-title">Get In Touch</h1>
+      <h4 class="contact-subtitle">Let's work together and create.</h4>
+      <h3 class="contact-p">Contact me if you are interested in working together, networking, or just a chat</h3>
+      <button class="btn btn-primary" type="submit" name="button">CONTACT ME</button>
+    </form>
+  </div>
+    </form>
+  </div>
+  <div class="bottom-container">
+    <a class="footer-link show-on-scroll text-trans" target="_blank" href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a class="footer-link show-on-scroll text-trans" target="_blank" href="https://www.instagram.com/chelo_mellow/"><i class="fab fa-instagram"></i> Instagram</a>
+    <a class="footer-link show-on-scroll text-trans" target="_blank" href="https://github.com/mvelkelly/"><i class="fab fa-github"></i> GitHub</a>
+    <p class="bottom-p">© Made with ❤️ by Marcel V.K. 2020</p>
+  </div>
+  <script src="js/index.js" charset="utf-8"></script>
+</body>
+
+</html>
