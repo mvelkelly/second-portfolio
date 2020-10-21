@@ -37,7 +37,7 @@ a {
 .top-section {
   text-align: center;
   margin-top: 10%;
-  height: 100vh;
+/*   height: 100vh; */
 }
 
 .title {
@@ -89,7 +89,7 @@ hr {
   letter-spacing: 1.5px;
   font-weight: bold;
   font-size: 2rem;
-  height: 100vh;
+/*   height: 100vh; */
 }
 
 .intro-p {
@@ -100,9 +100,9 @@ hr {
   text-align: center;
 }
 
-.portfolio {
+/* .portfolio {
   height: 100vh;
-}
+} */
 
 
 .project-title {
@@ -228,7 +228,8 @@ hr {
  background-size: cover;
  padding-top: 20%;
  padding-bottom: 20%;
- height: 100vh;
+ width: 100%;
+/*  height: 100vh; */
 }
 @media screen and (max-width: 600px) {
   .photography {
@@ -252,7 +253,7 @@ hr {
   text-align: center;
   margin-top: 5%;
   margin-bottom: 4%;
-  height: 100vh;
+/*   height: 100vh; */
 }
 
 .contact-title {
@@ -309,36 +310,7 @@ hr {
   font-size: 0.75rem;
 }
 
-/* Used to control color control a gradient color change in title. I removed it, but might use later */
-/* .gradient-text {
-    background-color: #f3ec78;
-    background-image: linear-gradient(45deg, #f3ec78, #af4261);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-} */
-    /* font-family: 'Piazzolla', serif;
-  font-family: 'Sansita Swashed', cursive; */
-/* ADDING THE SLIDE IN EFFECT FOR THE TOP TEXT */
 
-/* @keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.top-section {
-  /* This section calls the slideInFromLeft animation we defined above */
-  /* animation: 3s ease-out 0s 1 slideInFromLeft; */
-
-  /* background: #333; */
-  /* padding: 30px; */
-/* }  */
 
 /* CONTROLS FADE IN ON LOAD */
 .fade-in {
